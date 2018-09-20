@@ -1,0 +1,43 @@
+{
+	"uid" : "com.vomvos.CHell.model.user.User",
+	"operationDeclarations" : ["create","update","delete"],
+	"operationDefinations" : {
+		"create" : {
+			"userms.user.User" : {
+				"bo":"com.vomvos.CHell.model.user.User",
+				"dto":"com.vomvos.CHell.dto.user.Usegehlotr",
+				"boProperties":{
+					"isCompositeKey" : true,
+					"compositeKey" : [
+						"id",
+						"fullname",
+						"email"							
+					],
+					"columns":[
+						"password",
+						"isProfileCompleted",
+						"isCreator",
+						"isProfileCompleted"
+					]
+				}
+			},
+			"userms.user.UserByEmail" : {
+				"bo":"com.vomvos.CHell.model.user.UserByEmail",
+				"dto":"com.vomvos.CHell.dto.user.UserByEmail",
+				"boProperties":{
+					"isCompositeKey" : false,									
+					"columns" : [
+						"id",
+						"fullname",
+						"email",
+						"password",
+						"isProfileCompleted",
+						"isCreator",
+						"isProfileCompleted"
+					]
+				}
+			}	
+		}
+	}
+	
+}
