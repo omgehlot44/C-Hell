@@ -1,4 +1,4 @@
-package com.vomvos.chell.generator.jsonloader.metaclasses;
+package com.impetus.chell.generator.jsonloader.metaclasses;
 
 import java.io.Serializable;
 

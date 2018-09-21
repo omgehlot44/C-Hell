@@ -1,4 +1,4 @@
-package com.vomvos.chell.generator.jsonloader.metaclasses;
+package com.impetus.chell.generator.jsonloader.metaclasses;
 
 import java.io.Serializable;
 import java.util.HashMap;
@@ -19,6 +19,7 @@ public class MainEntityMeta implements Serializable{
 		this.operationDeclarations = operationDeclarations;
 		this.operationDefinations = operationDefinations;
 	}
+	public MainEntityMeta() {}
 
 	public String getUid() {
 		return uid;

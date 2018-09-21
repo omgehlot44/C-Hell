@@ -1,11 +1,11 @@
-package com.vomvos.chell;
+package com.impetus.chell;
 
 import java.io.IOException;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.vomvos.chell.generator.jsonloader.EntityJsonLoader;
+import com.impetus.chell.generator.jsonloader.EntityJsonLoader;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -15,7 +15,7 @@ public class DemoApplication {
 		try {
 			new EntityJsonLoader("User.json");
 			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

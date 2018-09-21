@@ -1,9 +1,10 @@
 {
 	"uid" : "com.vomvos.CHell.model.user.User",
-	"operationDeclarations" : ["create","update","delete"],
+	"operationDeclarations" : ["createUser","updateUser","deleteUser"],
 	"operationDefinations" : {
-		"create" : {
+		"createUser" : {
 			"userms.user.User" : {
+				"suboperation" : "create",
 				"bo":"com.vomvos.CHell.model.user.User",
 				"dto":"com.vomvos.CHell.dto.user.User",
 				"boProperties":{
@@ -19,9 +20,11 @@
 						"isCreator",
 						"isProfileCompleted"
 					]
-				}
+				},
+				"returnToNext" : ["id"]
 			},
 			"userms.user.UserByEmail" : {
+				"suboperation" : "create",
 				"bo":"com.vomvos.CHell.model.user.UserByEmail",
 				"dto":"com.vomvos.CHell.dto.user.UserByEmail",
 				"boProperties":{
@@ -35,7 +38,8 @@
 						"isCreator",
 						"isProfileCompleted"
 					]
-				}
+				},
+				"return" : ["id"]
 			}	
 		}
 	}
